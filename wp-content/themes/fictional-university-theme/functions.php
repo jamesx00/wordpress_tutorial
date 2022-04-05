@@ -1,4 +1,5 @@
 <?php
+@ini_set('upload_max_size', '64M');
 
 function university_files()
 {
@@ -17,6 +18,7 @@ function university_features()
     // register_nav_menu('footer_menu_location', 'Footer Menu Location');
     // register_nav_menu('footer_menu_location_2', 'Footer Menu Location 2');
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
 }
 
 add_action('after_setup_theme', 'university_features');

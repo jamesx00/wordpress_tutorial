@@ -48,7 +48,7 @@ function university_post_types()
     // Professor post type
     register_post_type('professor', array(
         'supports' => array(
-            'title', 'editor',
+            'title', 'editor', 'thumbnail',
         ),
         'public' => true,
         'menu_icon' => 'dashicons-welcome-learn-more',
